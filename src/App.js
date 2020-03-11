@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter, Route, BrowserRouter } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
+// as 를 사용해서 원하는대로 이름을 바꿔서 지정할 수 있다
 // import {About as Potato} from "./routes/About";
 
 // function App() {
@@ -11,6 +12,7 @@ import { HashRouter, Route, BrowserRouter } from "react-router-dom";
 // export default App;
 import Home from "./routes/Home";
 import About from "./routes/About";
+import Detail from "./routes/Detail";
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
     {/* 왜냐하면 path를 비교하고 같은게 있으면 전부 랜더링 하기 때문이다 */}
     <Route path="/" exact={true} component={Home} />
     <Route path="/about" component={About} />
+    <Route path="/movie-detail" component={Detail} />
   </HashRouter>
 }
 
