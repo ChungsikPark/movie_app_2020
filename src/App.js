@@ -23,7 +23,7 @@ function App() {
     {/* 왜냐하면 path를 비교하고 같은게 있으면 전부 랜더링 하기 때문이다 */}
     <Route path="/" exact={true} component={Home} />
     <Route path="/about" component={About} />
-    <Route path="/movie-detail" component={Detail} />
+    <Route path="/movie/:id" component={Detail} />
   </HashRouter>
 }
 
